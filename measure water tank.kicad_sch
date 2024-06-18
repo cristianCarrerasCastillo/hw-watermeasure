@@ -9,198 +9,6 @@
 		(company "Cristian Carreras")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_ARM_SWD_TagConnect_TC2030"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 2.54 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030"
-				(at 5.08 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-				(at 0 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Cortex Debug Connector ARM SWD JTAG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*TC2030*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_ARM_SWD_TagConnect_TC2030_0_0"
-				(pin power_in line
-					(at -2.54 10.16 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "TMS" bidirectional line)
-				)
-				(pin open_collector line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "SWCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "TCK" output line)
-				)
-				(pin power_in line
-					(at -2.54 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "SWO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "TDO" input line)
-				)
-			)
-			(symbol "Conn_ARM_SWD_TagConnect_TC2030_0_1"
-				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Jack-DC"
 			(pin_names
 				(offset 1.016)
@@ -2581,6 +2389,132 @@
 				)
 			)
 		)
+		(symbol "power:VDDA"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VDDA"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDDA\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VDDA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDDA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 124.46 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "098e67d7-ee2e-4160-8d0d-02448a5c903a")
 	)
 	(junction
 		(at 26.67 95.25)
@@ -2589,10 +2523,22 @@
 		(uuid "1450b4c1-2ff7-4c5a-a128-7d0d5a1a53fb")
 	)
 	(junction
+		(at 157.48 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fa01d40-abb5-4f0f-b67b-cbb5491a70d3")
+	)
+	(junction
 		(at 60.96 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7475ee9a-6f68-47e0-840d-f3a8c6ee6cbd")
+	)
+	(junction
+		(at 26.67 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ffbc61d-c737-4e54-a8c8-bd2ea23093ed")
 	)
 	(junction
 		(at 50.8 57.15)
@@ -2605,6 +2551,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce97519d-431c-477b-b81c-6ff5e1fed98c")
+	)
+	(junction
+		(at 26.67 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7e344bb-046b-4e06-8085-4da3f24db435")
 	)
 	(junction
 		(at 60.96 95.25)
@@ -2620,13 +2572,23 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 95.25) (xy 26.67 90.17)
+			(xy 172.72 43.18) (xy 185.42 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e5602ec-56e7-461c-9ec6-58f540293573")
+		(uuid "05418e24-9a0a-4776-8459-28545e7e305e")
+	)
+	(wire
+		(pts
+			(xy 157.48 99.06) (xy 157.48 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0e2ab4-a3d6-49dd-972a-c244ee00bd28")
 	)
 	(wire
 		(pts
@@ -2637,6 +2599,26 @@
 			(type default)
 		)
 		(uuid "12980b73-a197-44b7-871a-d271ac5d7e26")
+	)
+	(wire
+		(pts
+			(xy 144.78 38.1) (xy 157.48 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13db3bd7-8ade-47c5-b77b-cc00e2cf5889")
+	)
+	(wire
+		(pts
+			(xy 26.67 110.49) (xy 26.67 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1507684b-2b72-4114-a55a-1093a663a4d7")
 	)
 	(wire
 		(pts
@@ -2660,6 +2642,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 30.48) (xy 26.67 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fefe1e6-9243-4ac2-b211-764b8fa66c19")
+	)
+	(wire
+		(pts
 			(xy 60.96 57.15) (xy 60.96 62.23)
 		)
 		(stroke
@@ -2670,6 +2662,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 29.21) (xy 124.46 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d1f772c-5fbe-4c99-8ab2-faa7c9a7eac7")
+	)
+	(wire
+		(pts
 			(xy 46.99 50.8) (xy 46.99 57.15)
 		)
 		(stroke
@@ -2677,16 +2679,6 @@
 			(type default)
 		)
 		(uuid "2dbff5b7-a65e-4670-abdb-49c8026f1f6b")
-	)
-	(wire
-		(pts
-			(xy 26.67 71.12) (xy 26.67 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32f813fa-2de6-47b4-b346-97f398f71947")
 	)
 	(wire
 		(pts
@@ -2710,13 +2702,13 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 82.55) (xy 26.67 78.74)
+			(xy 172.72 45.72) (xy 185.42 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39fce7c9-f418-45bb-848d-1a617ff77536")
+		(uuid "3b744fab-ad0c-4d39-8d47-f3e081f3c0e3")
 	)
 	(wire
 		(pts
@@ -2730,6 +2722,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 26.67) (xy 124.46 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4277a5e7-4235-4b5e-afea-c57603ca4927")
+	)
+	(wire
+		(pts
 			(xy 60.96 106.68) (xy 60.96 111.76)
 		)
 		(stroke
@@ -2740,17 +2742,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 88.9) (xy 172.72 91.44)
+			(xy 144.78 26.67) (xy 144.78 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4bfea4ce-67eb-42b6-a0f4-ae4d56bdfa7e")
+		(uuid "4812aa73-7c6b-4ca8-8702-b1630517c630")
 	)
 	(wire
 		(pts
-			(xy 26.67 33.02) (xy 26.67 29.21)
+			(xy 26.67 29.21) (xy 26.67 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2777,16 +2779,6 @@
 			(type default)
 		)
 		(uuid "63227397-8e16-4f06-801e-ca6b8c007957")
-	)
-	(wire
-		(pts
-			(xy 172.72 25.4) (xy 172.72 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66708636-d365-4f63-b700-a15f99e1d9b0")
 	)
 	(polyline
 		(pts
@@ -2900,6 +2892,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 86.36) (xy 26.67 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9922d76-f91c-4357-8665-ca5d2daa32f0")
+	)
+	(wire
+		(pts
 			(xy 45.72 50.8) (xy 46.99 50.8)
 		)
 		(stroke
@@ -2927,6 +2929,26 @@
 			(type default)
 		)
 		(uuid "bea1a193-5f9d-4b72-b451-52904ddc788b")
+	)
+	(wire
+		(pts
+			(xy 26.67 102.87) (xy 26.67 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c03478d0-3323-4ea5-af78-c1302193f800")
+	)
+	(wire
+		(pts
+			(xy 124.46 36.83) (xy 124.46 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fbbc8b-2eee-4f8a-b4a7-e9519ba9d868")
 	)
 	(wire
 		(pts
@@ -3000,6 +3022,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 26.67) (xy 124.46 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb54d8c4-80e0-4894-b9d5-baf2d4322cb2")
+	)
+	(wire
+		(pts
 			(xy 26.67 48.26) (xy 26.67 45.72)
 		)
 		(stroke
@@ -3020,6 +3052,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 30.48) (xy 26.67 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2482557-caa4-48fa-8dc7-f9d5364d1eb2")
+	)
+	(wire
+		(pts
 			(xy 60.96 39.37) (xy 60.96 45.72)
 		)
 		(stroke
@@ -3027,6 +3069,26 @@
 			(type default)
 		)
 		(uuid "f749845e-9eb7-4da3-a2c7-3baf57c30b32")
+	)
+	(wire
+		(pts
+			(xy 118.11 21.59) (xy 118.11 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc6559a8-c5ee-46ef-8333-398c87a37388")
+	)
+	(wire
+		(pts
+			(xy 157.48 36.83) (xy 157.48 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe562c9a-c45c-4e1b-aacd-c1f42dd729f0")
 	)
 	(wire
 		(pts
@@ -3047,6 +3109,72 @@
 			)
 		)
 		(uuid "8c4f4696-b9df-4204-b961-18640485b357")
+	)
+	(global_label "ch340c-rx"
+		(shape input)
+		(at 185.42 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1f21bac5-be3b-4820-bb63-a862d5bf982e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.7466 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ch340c-tx"
+		(shape input)
+		(at 185.42 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b3b7f08-80bb-4ddc-a354-b018bfa301b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.6861 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "usb_5v"
+		(shape input)
+		(at 22.86 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e6f2b4bb-bc7e-4477-82eb-5be9e8657b9b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 13.404 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -3142,7 +3270,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 27.6352 40.64 0)
 			(effects
 				(font
@@ -3262,6 +3390,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 118.11 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ac6981b-a584-4a37-919f-32626795c027")
+		(property "Reference" "#PWR015"
+			(at 118.11 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3v3"
+			(at 121.412 18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 118.11 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c134acc-0455-487a-8311-9c2082bb97b7")
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 36.83 129.54 0)
 		(unit 1)
@@ -3355,7 +3548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 51.816 49.784 90)
 			(effects
 				(font
@@ -3392,6 +3585,208 @@
 			(project "measure water tank"
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDDA")
+		(at 157.48 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e4a4956-3abd-4e32-8d70-c0e89e641f8e")
+		(property "Reference" "#PWR014"
+			(at 157.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDDA33A"
+			(at 157.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
+			(at 157.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27f9765b-8a3c-4e77-832b-7ed7e23edb91")
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e4ca3fe-03dc-4c0a-9456-b7e24ac9328c")
+		(property "Reference" "#PWR013"
+			(at 157.48 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b238769-3c95-4d40-86e2-108e50083818")
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3bd54af8-37cf-4038-8e67-008ac0473893")
+		(property "Reference" "C7"
+			(at 128.27 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1nF/25v"
+			(at 128.27 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 125.4252 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d841658-a656-44bb-806d-25f4d7f6ad2b")
+		)
+		(pin "1"
+			(uuid "41d8517f-f1c7-4c01-a638-a3f3f36538d4")
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -3458,72 +3853,6 @@
 			(project "measure water tank"
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 172.72 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ff6cb9d-0906-44f5-a6c8-fa9462a01896")
-		(property "Reference" "#PWR013"
-			(at 172.72 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 172.72 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17430152-85a2-48ef-9ff4-773bec354f30")
-		)
-		(instances
-			(project "measure water tank"
-				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3632,7 +3961,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
 			(at 27.94 139.446 0)
 			(effects
 				(font
@@ -3675,99 +4004,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030")
-		(at 247.65 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "657feed9-2fbb-4da8-b9f0-41eb6a51ad2a")
-		(property "Reference" "J2"
-			(at 254 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_ARM_SWD_TagConnect_TC2030"
-			(at 254 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-			(at 247.65 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
-			(at 247.65 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
-			(at 247.65 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "801e6f37-723d-43d3-b90c-84c4fdaecb9d")
-		)
-		(pin "4"
-			(uuid "fdf5d516-4a79-4e17-9659-862717b96591")
-		)
-		(pin "1"
-			(uuid "f1aeac6d-a33a-440e-b523-cadf9f0b1d01")
-		)
-		(pin "6"
-			(uuid "dc09a4f8-a24e-4639-abc4-378823c53018")
-		)
-		(pin "3"
-			(uuid "d9627fc2-02f1-440a-afc2-8b9691ad7e11")
-		)
-		(pin "5"
-			(uuid "8477a97d-b981-493a-bd7e-7dd4a53ee8f8")
-		)
-		(instances
-			(project "measure water tank"
-				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 172.72 25.4 0)
+		(lib_id "power:GND")
+		(at 124.46 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "66d0a53e-71e7-45fb-a8cc-ac68de2de28d")
-		(property "Reference" "#PWR014"
-			(at 172.72 29.21 0)
+		(uuid "6026a439-ae1a-4a79-a6ea-82b801f03bad")
+		(property "Reference" "#PWR017"
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3775,8 +4022,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3v3"
-			(at 172.72 20.32 0)
+		(property "Value" "GND"
+			(at 124.46 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3784,7 +4031,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 25.4 0)
+			(at 124.46 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3793,7 +4040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 25.4 0)
+			(at 124.46 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3801,8 +4048,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 172.72 25.4 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3811,29 +4058,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "901eda20-d3c2-46c9-9cc2-77598f519528")
+			(uuid "99687358-7782-47f4-8a93-560bacaedf70")
 		)
 		(instances
 			(project "measure water tank"
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
-					(reference "#PWR014")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 26.67 86.36 0)
+		(lib_id "RF_Module:ESP32-S3-MINI-1U")
+		(at 157.48 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "71bfeab3-5bbe-4c7e-9325-52b6ee009ef0")
-		(property "Reference" "C3"
-			(at 30.48 85.0899 0)
+		(uuid "6caa7e7c-36c4-4a6a-90cc-ca7d434869d1")
+		(property "Reference" "U3"
+			(at 159.6741 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3841,8 +4088,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uf"
-			(at 30.48 87.6299 0)
+		(property "Value" "ESP32-S3-MINI-1U"
+			(at 159.6741 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,8 +4097,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 27.6352 90.17 0)
+		(property "Footprint" "RF_Module:ESP32-S2-MINI-1U"
+			(at 173.99 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,8 +4106,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 26.67 86.36 0)
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf"
+			(at 157.48 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,8 +4115,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 26.67 86.36 0)
+		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, external antenna"
+			(at 157.48 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,16 +4124,205 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "5cac6f1e-fd22-4d82-96cc-b28247d306bb")
+		(pin "8"
+			(uuid "c1c1dea6-329d-43f3-8bf8-7e9203fb03f8")
+		)
+		(pin "14"
+			(uuid "783129d0-094b-499d-84cc-ef7ab2bc8222")
+		)
+		(pin "23"
+			(uuid "44e48753-a102-498b-9258-50de5e718419")
+		)
+		(pin "36"
+			(uuid "c54e8534-1f30-43de-8328-9e572e423b06")
+		)
+		(pin "59"
+			(uuid "9aff4296-29ac-417e-af9e-871c6dcd42ae")
+		)
+		(pin "28"
+			(uuid "7d3ff7aa-b190-44a1-980e-842b17446898")
+		)
+		(pin "24"
+			(uuid "6bc2130b-72d0-480b-8911-014129c200ac")
+		)
+		(pin "10"
+			(uuid "5e6badb7-c211-4445-b8ca-fee31e5a1c9b")
+		)
+		(pin "37"
+			(uuid "32e2f588-3c6a-441e-8e42-7246a0ae53a9")
+		)
+		(pin "13"
+			(uuid "989b1740-d98e-4293-8933-0c7821b3c17e")
+		)
+		(pin "45"
+			(uuid "4f5241d5-6b58-430d-a53d-ffe75bfeb4ce")
+		)
+		(pin "54"
+			(uuid "4d06e554-8ca7-45db-82f2-e3f5efa1616f")
+		)
+		(pin "57"
+			(uuid "5218451a-fbba-4836-bca4-e869c6ccba0d")
+		)
+		(pin "48"
+			(uuid "21c57abd-e111-4d5f-a67f-ca96cef7c954")
+		)
+		(pin "25"
+			(uuid "7e4c6d7c-6a8b-41f6-88fc-07147b9236ad")
+		)
+		(pin "27"
+			(uuid "b4bb3d54-b8c4-4b99-af5f-03c5a114d7b5")
+		)
+		(pin "12"
+			(uuid "ca1aad58-76b8-4e85-bfed-0005873bca6a")
+		)
+		(pin "31"
+			(uuid "0aa40afd-b461-4384-81e7-0f0accd5b21c")
+		)
+		(pin "32"
+			(uuid "51e4c48c-f121-4f93-8f1e-8483ab0fc704")
 		)
 		(pin "1"
-			(uuid "3b9de66d-b924-462e-a19b-6f89a43a1f43")
+			(uuid "02e94ca4-2a0d-49d4-9dc7-6739e666ed28")
+		)
+		(pin "34"
+			(uuid "0f8a6356-57e0-46b0-908f-29480f9eaece")
+		)
+		(pin "20"
+			(uuid "bd830711-a4d3-4f17-a9e7-5e82cbf96eab")
+		)
+		(pin "49"
+			(uuid "8f74b5c7-e415-49c1-818a-d98abf62f5bb")
+		)
+		(pin "40"
+			(uuid "52e0de0e-0c08-48ae-842f-0a4f67569094")
+		)
+		(pin "11"
+			(uuid "f16d5473-7de8-40ef-9797-d22a23f3da93")
+		)
+		(pin "52"
+			(uuid "6e0daac5-5146-46cb-89f2-1a18152ced50")
+		)
+		(pin "44"
+			(uuid "7af00ae6-78b1-46de-b3ec-b35f37425ff0")
+		)
+		(pin "53"
+			(uuid "8760cdf5-7ff3-4088-bbb3-f9a1d6745dad")
+		)
+		(pin "18"
+			(uuid "0affc4b8-b613-4f5d-bb4e-90cf93134321")
+		)
+		(pin "3"
+			(uuid "9965be9e-3151-4475-920c-82a48d7eee0c")
+		)
+		(pin "42"
+			(uuid "1054947f-58af-4389-963b-d3915039248c")
+		)
+		(pin "38"
+			(uuid "cf9c5bf9-cb46-4961-825f-5079b03a2e7f")
+		)
+		(pin "16"
+			(uuid "2ee6e43d-efa1-43dd-865c-7b1ac3d36338")
+		)
+		(pin "56"
+			(uuid "3e5b36ed-aad6-4048-b8e4-bed3bb2cf0d0")
+		)
+		(pin "26"
+			(uuid "0251635f-2ead-4e71-a16b-087f774b21c1")
+		)
+		(pin "29"
+			(uuid "c7298830-7ec3-43d3-a025-522979253135")
+		)
+		(pin "41"
+			(uuid "2d8d97d4-06fb-456b-bc16-9fe3332836bc")
+		)
+		(pin "15"
+			(uuid "53250319-a5cf-434a-a1dd-56348b6b945d")
+		)
+		(pin "4"
+			(uuid "6d1fa79c-4b3e-4c52-b4ea-a40a34ec6cb3")
+		)
+		(pin "22"
+			(uuid "b7fc71e3-6178-4549-98cc-137b763cdef5")
+		)
+		(pin "35"
+			(uuid "b407c264-1738-4c90-8198-5269d678b44d")
+		)
+		(pin "47"
+			(uuid "64572b56-58e9-430d-bcf6-e89d0f17414e")
+		)
+		(pin "30"
+			(uuid "051753b0-dd5c-4881-bb86-005226e5f260")
+		)
+		(pin "5"
+			(uuid "53ee6c06-c076-4779-9d60-ed46534fcee1")
+		)
+		(pin "51"
+			(uuid "8eb94c4e-58e6-481f-b60c-32ee4853a662")
+		)
+		(pin "58"
+			(uuid "5e02614b-7a5a-4fe0-9bf4-331d493b1208")
+		)
+		(pin "2"
+			(uuid "12b04c7f-6f2c-4a03-a1b1-e0fcc08b3258")
+		)
+		(pin "33"
+			(uuid "10a0d530-73a3-4b40-a925-fa4b62f501ca")
+		)
+		(pin "60"
+			(uuid "42f61c3f-a079-48fa-9122-f73cf89c269a")
+		)
+		(pin "17"
+			(uuid "631d590f-5993-4d8c-aacc-a95c1e5396ac")
+		)
+		(pin "55"
+			(uuid "9d2dc53d-ee7b-4947-8933-2c10c7682a0b")
+		)
+		(pin "61"
+			(uuid "60dcd624-9463-43fb-80fe-f940ce1ecbc4")
+		)
+		(pin "21"
+			(uuid "ca44e6a3-07b1-4cce-b4e8-2bf854ad7817")
+		)
+		(pin "50"
+			(uuid "f487fe5c-f1fc-4bf0-b2ad-5e5750794cca")
+		)
+		(pin "39"
+			(uuid "5beb37e2-14e5-468b-8f1e-2c2c9e4ff290")
+		)
+		(pin "62"
+			(uuid "4cd99efa-16b8-4bfc-acd5-83e48f115012")
+		)
+		(pin "63"
+			(uuid "58e6ac48-11c3-475e-a7b1-3db9199cc90a")
+		)
+		(pin "64"
+			(uuid "aa3bb268-4455-4fa8-ae7c-fb276450d19e")
+		)
+		(pin "19"
+			(uuid "8d4df39a-a115-4de1-ba4b-e7c9a4b2af9f")
+		)
+		(pin "46"
+			(uuid "0e2c90f4-b2e3-4127-9858-2f58d5d7b62b")
+		)
+		(pin "65"
+			(uuid "e6939993-4957-4ad5-a3cb-10e17d02b05d")
+		)
+		(pin "7"
+			(uuid "f2704c8f-94b4-4d6e-add8-71784a2ef056")
+		)
+		(pin "43"
+			(uuid "ea40e44c-5bb8-4a2f-98cc-ac313681a6de")
+		)
+		(pin "6"
+			(uuid "a39d5fa5-9fbd-4678-8da5-d300610cb1ca")
+		)
+		(pin "9"
+			(uuid "a390ffbf-d110-4744-af43-79492a262de1")
 		)
 		(instances
 			(project "measure water tank"
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
-					(reference "C3")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -3920,7 +4356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 51.816 63.754 90)
 			(effects
 				(font
@@ -4029,265 +4465,6 @@
 		)
 	)
 	(symbol
-		(lib_id "RF_Module:ESP32-S3-MINI-1U")
-		(at 172.72 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8abd199c-f214-4ace-b98f-b717ad59214d")
-		(property "Reference" "U3"
-			(at 174.9141 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESP32-S3-MINI-1U"
-			(at 174.9141 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Module:ESP32-S2-MINI-1U"
-			(at 189.23 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf"
-			(at 172.72 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, external antenna"
-			(at 172.72 15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "6cefefa1-942a-425e-a2f4-c6170db6b219")
-		)
-		(pin "12"
-			(uuid "0c724881-d2f9-49cc-800b-3b542608618a")
-		)
-		(pin "3"
-			(uuid "767c9864-f855-42d3-8413-1704aebd99b3")
-		)
-		(pin "39"
-			(uuid "85998c45-8327-4aa1-8c09-ad41fcf886be")
-		)
-		(pin "48"
-			(uuid "4ed61e24-a5e3-45ba-a105-4776405d9b06")
-		)
-		(pin "34"
-			(uuid "20d4c87e-5a0d-4f6d-bc9f-768438d0e7cc")
-		)
-		(pin "15"
-			(uuid "2dc1e4af-340e-4b9d-853c-cfd9fa954342")
-		)
-		(pin "55"
-			(uuid "110868d8-90bf-4a77-a6b8-cfc5816d1474")
-		)
-		(pin "58"
-			(uuid "f8846998-bae6-4fcc-9ec8-6d349794228c")
-		)
-		(pin "20"
-			(uuid "de800f88-53cc-47a0-bd77-3592d5201fda")
-		)
-		(pin "44"
-			(uuid "98c1b17a-5ff8-4fe9-9190-98e0fb39c576")
-		)
-		(pin "50"
-			(uuid "a8dca695-aa92-43c1-83b8-d8f7486ea681")
-		)
-		(pin "57"
-			(uuid "e89b0af3-6e7c-4840-bb17-7c77270618d7")
-		)
-		(pin "24"
-			(uuid "62091532-881e-4359-ab6b-d07a63bdbca1")
-		)
-		(pin "11"
-			(uuid "9656f9a1-2aad-4b74-8e75-c851a2e41cd0")
-		)
-		(pin "36"
-			(uuid "68cee2b0-4ef2-4a75-9672-633cb984afe2")
-		)
-		(pin "53"
-			(uuid "5a3cfaea-a6c3-4f37-8135-33261739710a")
-		)
-		(pin "56"
-			(uuid "ad9f8b7e-2cdd-4d9f-9284-6aba02140528")
-		)
-		(pin "23"
-			(uuid "376fbd79-5504-4e58-adeb-ad36ba5b0c6a")
-		)
-		(pin "40"
-			(uuid "0d710c70-aba8-481e-97b2-f35ab34fb12f")
-		)
-		(pin "17"
-			(uuid "d4e1fec5-536a-474f-bc0b-2b8ef32e7677")
-		)
-		(pin "27"
-			(uuid "1aedff09-7258-4503-9955-8c7dbb276295")
-		)
-		(pin "59"
-			(uuid "7dedecf6-43c0-4f9a-ba47-79f2d14be987")
-		)
-		(pin "22"
-			(uuid "c0233725-84aa-4824-990a-390924bccdfd")
-		)
-		(pin "29"
-			(uuid "873e3fbe-35b8-4b0a-8cf6-d5111e5d379c")
-		)
-		(pin "43"
-			(uuid "808eb5f2-a463-408e-ba09-5fcb64332f43")
-		)
-		(pin "35"
-			(uuid "3807b12a-3d87-4758-bcda-6daf93bf2fad")
-		)
-		(pin "51"
-			(uuid "b25deace-e075-47ae-a219-bc42fa39bc72")
-		)
-		(pin "6"
-			(uuid "a834aed0-cbe6-4e7a-b8ff-fb5c71d0e9e5")
-		)
-		(pin "16"
-			(uuid "d5316f56-3e0a-438d-af84-4780e5371d5e")
-		)
-		(pin "49"
-			(uuid "83c37025-ee3c-4c09-ae6d-b1779b23249b")
-		)
-		(pin "62"
-			(uuid "142593e4-cd7f-437b-b95b-9c62b950491e")
-		)
-		(pin "61"
-			(uuid "e5f8da84-abed-4b5d-baa6-1a70b2a29277")
-		)
-		(pin "46"
-			(uuid "8edc718b-0f7f-450d-9c38-2b39edd17254")
-		)
-		(pin "26"
-			(uuid "fdbb25f7-01f5-419f-9eeb-a5ff04ecd572")
-		)
-		(pin "18"
-			(uuid "15c096a5-3d01-448d-a086-d792dac62a9a")
-		)
-		(pin "31"
-			(uuid "b8fd1e37-1473-41ce-9b7c-0daf468c98ad")
-		)
-		(pin "1"
-			(uuid "81078744-2217-4568-8532-252de0aac28e")
-		)
-		(pin "28"
-			(uuid "178ec88f-f9c6-43b2-8e4b-cf2f058ef9e7")
-		)
-		(pin "33"
-			(uuid "8f484c28-1277-486c-bba3-9cd5bb7ada78")
-		)
-		(pin "13"
-			(uuid "64163256-f17c-4922-a6d7-bdafe3def464")
-		)
-		(pin "37"
-			(uuid "1b4053c9-39f6-4d92-880c-9b713b928412")
-		)
-		(pin "41"
-			(uuid "fa585161-d91f-4c8d-9df5-84e436f1c1b5")
-		)
-		(pin "42"
-			(uuid "abe3540e-23a6-4849-93ef-e8848324a658")
-		)
-		(pin "60"
-			(uuid "17244bc9-ab4a-47cf-802a-a9354cf2a55d")
-		)
-		(pin "30"
-			(uuid "7f937687-6f64-42b0-955e-34b2c80b6ec9")
-		)
-		(pin "63"
-			(uuid "4027dd2e-2f0b-40a3-87d4-e5f03cf2dafa")
-		)
-		(pin "45"
-			(uuid "67c13f54-08e2-4507-aa80-e0fbfa489106")
-		)
-		(pin "64"
-			(uuid "68701894-018a-49a0-a64f-6a3411c59475")
-		)
-		(pin "65"
-			(uuid "c4c17b0e-e731-49e6-809d-57be83706973")
-		)
-		(pin "47"
-			(uuid "246dcc3f-53e6-4d3e-9987-b79e39e61d01")
-		)
-		(pin "7"
-			(uuid "ad633425-90a5-4c03-b164-374834a458a3")
-		)
-		(pin "19"
-			(uuid "6277fd64-887d-4be6-ba07-e55aa662a8d9")
-		)
-		(pin "38"
-			(uuid "dda80214-e69b-48f0-8edd-c4ddfc67921f")
-		)
-		(pin "8"
-			(uuid "7d721680-c15a-41b2-ae35-96881b2ebc8f")
-		)
-		(pin "4"
-			(uuid "be0b1733-e79e-48fc-9cdd-c7083f5ab84d")
-		)
-		(pin "21"
-			(uuid "be886f84-2ba7-42af-8a65-1ae260014407")
-		)
-		(pin "14"
-			(uuid "7370b2f5-bf87-47ba-ba88-f5ddcad88e4b")
-		)
-		(pin "2"
-			(uuid "e0f2f16c-97b9-4901-a6c7-286cb533923a")
-		)
-		(pin "25"
-			(uuid "a7abcabc-04bd-43ae-a2bf-329a2f059d84")
-		)
-		(pin "32"
-			(uuid "473acbac-c9cc-472b-8386-fa1c68c572af")
-		)
-		(pin "52"
-			(uuid "21fa4148-ee7d-4147-bc52-788f75236f2a")
-		)
-		(pin "10"
-			(uuid "427a3b82-fe2e-449c-a81f-d47ff0903a00")
-		)
-		(pin "54"
-			(uuid "b2a9663b-8f93-4cab-baab-e9be34e7bb18")
-		)
-		(pin "9"
-			(uuid "a4a20ea2-2a19-4e75-abfd-fe33d987d5b6")
-		)
-		(instances
-			(project "measure water tank"
-				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 36.83 144.78 0)
 		(unit 1)
@@ -4355,7 +4532,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 26.67 68.58 0)
+		(at 26.67 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4364,7 +4541,7 @@
 		(fields_autoplaced yes)
 		(uuid "94bdfbd9-d3f2-4623-8a76-60200487e0cc")
 		(property "Reference" "#PWR012"
-			(at 26.67 72.39 0)
+			(at 26.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4373,7 +4550,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 26.67 63.5 0)
+			(at 26.67 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4381,7 +4558,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 68.58 0)
+			(at 26.67 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4390,7 +4567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 68.58 0)
+			(at 26.67 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4399,7 +4576,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 26.67 68.58 0)
+			(at 26.67 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4414,6 +4591,76 @@
 			(project "measure water tank"
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 26.67 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9705a549-7508-4e79-b610-4331e0de860e")
+		(property "Reference" "C3"
+			(at 30.48 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uf"
+			(at 30.48 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 27.6352 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 26.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0f918eff-0125-48c0-adcc-bb4e3222286b")
+		)
+		(pin "1"
+			(uuid "d7eb0abf-b27d-4e95-9093-0fafe81c2daf")
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4438,7 +4685,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "470pf"
 			(at 54.61 109.2199 0)
 			(effects
 				(font
@@ -4447,7 +4694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 51.7652 111.76 0)
 			(effects
 				(font
@@ -4517,7 +4764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 61.9252 57.15 0)
 			(effects
 				(font
@@ -4554,6 +4801,72 @@
 			(project "measure water tank"
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 26.67 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a76fb4a5-1a34-401f-8b57-c1e242fb0d9e")
+		(property "Reference" "#PWR033"
+			(at 26.67 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02d818d5-5217-4212-95d1-3807f976a5af")
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -4627,76 +4940,6 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 26.67 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b225fa11-cd31-4091-8de7-bdaf156819a7")
-		(property "Reference" "F2"
-			(at 29.21 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "600mA"
-			(at 29.21 76.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.892 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 26.67 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "045d94d5-f792-41a4-b999-20221a7f0411")
-		)
-		(pin "1"
-			(uuid "b11e334d-3949-4a58-8f8a-d7444fa91ba8")
-		)
-		(instances
-			(project "measure water tank"
-				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
 		(at 26.67 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4723,7 +4966,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_Bourns_MF-RG300"
 			(at 24.892 25.4 90)
 			(effects
 				(font
@@ -5048,7 +5291,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uf"
+		(property "Value" "10nF/6.3V"
 			(at 64.77 104.1399 0)
 			(effects
 				(font
@@ -5057,7 +5300,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 61.9252 106.68 0)
 			(effects
 				(font
@@ -5161,6 +5404,44 @@
 				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
 					(reference "#PWR05")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 313.69 0)
+		(size 299.72 205.74)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1b55425d-68b8-4a69-b5cd-6082fad38dab")
+		(property "Sheetname" "usb"
+			(at 313.69 -0.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power and esp12.kicad_sch"
+			(at 313.69 206.3246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "measure water tank"
+				(path "/413207c0-e8d5-4583-83c6-e81cf52345bf"
+					(page "2")
 				)
 			)
 		)
